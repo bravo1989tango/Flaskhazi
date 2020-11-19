@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+a {
+    margin: 2vh;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: right;
+    padding: 2vh;
+    padding-right: 4vh;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 88vh;
+}
+
+.logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.search {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    justify-content: center;
+}
+
+.gombok {
+    grid-row: 2/3;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10vh;
+}
+
+.balend {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.balend>a,
+.jobbend>a {
+    color: gray;
+    font-weight: 550;
+}
+
+.jobbend {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.gombok>a {
+    color: gray;
+    font-weight: 550;
+    font-size: 16px;
+}
+
+.loginmain {
+    height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5vh;
+    font-family: sans-serif;
+}
+
+.loginlogo {
+    grid-row: 1 /2;
+    grid-column: 2 /3;
+    justify-content: center;
+    display: flex;
+}
+
+.p {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.p1 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -15vh;
+}
+
+.p2 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -12vh;
+}
+
+.loginform {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.buttoninput,
+.formemail {
+    width: 200px;
+    height: 35px;
+}
+
+.formemail {
+    background-color: khaki;
+    color: gray;
+    padding-left: 5px;
+    border: none;
+    position: relative;
+    top: 15vh;
+}
+
+.buttoninput {
+    background-color: dodgerblue;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    top: 15vh;
+}
+
+.buttoninput:hover {
+    color: black;
+    background-color: cadetblue;
+}
+
+.fiók {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40vh;
+}
+
+.fiókgomb {
+    color: dodgerblue;
+}
+
+.loginmain>.balend {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    top: 15vh;
+}
+
+.loginmain>.balend>a,
+.jobbend>a {
+    color: gray;
+    font-weight: 550;
+    font-size: 13px;
+}
+
+.loginmain>.jobbend {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+    top: 15vh;
+}

@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.portgombok,
+.indgombok {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    border-radius: 15px;
+    background-color: rgb(145, 255, 0);
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: 800;
+}

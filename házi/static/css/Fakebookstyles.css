@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    padding: 6px 0 0px 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+
+main {
+    background: blanchedalmond;
+}
+
+.yeahboy {
+    border-radius: 75%;
+    height: 150px;
+    width: 150px;
+    margin: 0 0 20px 25px;
+}
+
+.oldal {
+    border: 1px solid black;
+    padding: 250px 10px 10px 10px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    max-width: 900px;
+    max-height: 200px;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.jobboldal {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    background-color: cornflowerblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: white;
+    background-color: blue;
+}
+
+.info {
+    display: flex;
+    padding: 0 0 0 40px;
+    height: 600px;
+    flex-direction: column;
+}
+
+.barat {
+    font-weight: bold;
+    color: black;
+    margin: 0 0 20px 35px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+}
+
+.barat:hover {
+    background-color: blue;
+    color: white;
+}
+
+.név {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 20px 25px;
+}
+
+.gsc-control-cse.gsc-control-cse-hu {
+    background: transparent;
+    border-color: transparent;
+    max-height: 10px;
+    max width: 10px;
+}
+
+.gsc-input-box {
+    margin: 0 0 0 150px;
+    width: 500px;
+}
+
+.bal-container {
+    padding: 0 0 0 0;
+    margin: auto;
+}
+
+.menugomb {
+    padding: 22px 0 20px 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5 ease-in-out;
+}
+
+.burger {
+    width: 30px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.burger::before {
+    transform: translateY(-10px);
+}
+
+.burger::after {
+    transform: translateY(10px);
+}
+
+.menugomb.open .burger {
+    transform: translateX(-50px);
+    background: transparent
+}
+
+.menugomb.open .burger::before {
+    transform: rotate(45deg) translateX(35px) translateY(-35px)
+}
+
+.menugomb.open .burger::after {
+    transform: rotate(-45deg) translateX(35px) translateY(35px)
+}
