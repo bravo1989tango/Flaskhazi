@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-const PORT = process.env.PORT || '8080'
-app.set("port", PORT)
 
 @app.route("/")
 def index():
